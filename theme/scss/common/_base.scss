@@ -1,5 +1,6 @@
 body{
 	font-size: 62.5%;
+	color: $bodyBackgroundColor;
 }
 h1 {
 	font-size: 1.8em;
@@ -19,3 +20,4 @@ p, th, td, input, textarea, select {
 a{
 	outline: 0;
 }
+$fontSize: 10;
