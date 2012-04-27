@@ -1,0 +1,18 @@
+@mixin MenuBarList($color: #B6B6B6, $fontSize: 13){
+	ul{		
+		@include inline-block-list(toEm(4,$fontSize));						
+		li{		
+			padding: 0;				
+			a{
+				padding: 0 toEm(11,$fontSize) 0 toEm(15,$fontSize);							
+				border-left: toEm(2,$fontSize) solid $color;									
+				font-size: toEm($fontSize,10);
+				color: #FFFFFF;
+				font-style: normal;																		
+			}					
+		}	
+		li:first-child a{	
+			border: none;	
+		}			
+	}
+}
