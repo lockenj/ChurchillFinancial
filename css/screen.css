@@ -561,20 +561,84 @@ a {
 /* line 1, ../theme/scss/frame/_frame.scss */
 #frame {
   width: 96em;
-  height: 800px;
   margin: auto;
+  behavior: url("/js/css3pie/PIE.htc");
   -webkit-box-shadow: 0 0 13px 4px #d9d9d9;
   -moz-box-shadow: 0 0 13px 4px #d9d9d9;
   box-shadow: 0 0 13px 4px #d9d9d9;
 }
 /* line 1, ../theme/scss/frame/_header.scss */
 #frame > header {
+  position: relative;
   height: 11em;
   background-color: white;
+  padding: 0 0 0 4em;
+}
+/* line 7, ../theme/scss/frame/_header.scss */
+#frame > header img {
+  margin-top: 1em;
+}
+/* line 10, ../theme/scss/frame/_header.scss */
+#frame > header nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  height: 11em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 60, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#frame > header nav li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: right;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 48, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#frame > header nav li:first-child, #frame > header nav li.first {
+  padding-right: 0;
+}
+/* line 49, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#frame > header nav li:last-child {
+  padding-left: 0;
+}
+/* line 50, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#frame > header nav li.last {
+  padding-left: 0;
+}
+/* line 17, ../theme/scss/frame/_header.scss */
+#frame > header nav ul {
+  margin: 0;
+}
+/* line 19, ../theme/scss/frame/_header.scss */
+#frame > header nav ul li {
+  display: inline-block;
+}
+/* line 21, ../theme/scss/frame/_header.scss */
+#frame > header nav ul li a {
+  font-size: 1.4em;
+  padding: 0 2.5em;
+  color: #575757;
+  text-decoration: none !important;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 11em;
+}
+/* line 32, ../theme/scss/frame/_header.scss */
+#frame > header nav ul li a.selected,
+#frame > header nav ul li a:hover {
+  background-color: #ebebeb;
 }
 /* line 1, ../theme/scss/frame/_footer.scss */
-#frame > header {
-  height: 17em;
+#frame > footer {
+  height: 12.143em;
   background-color: white;
 }
 /* line 1, ../theme/scss/frame/_content.scss */

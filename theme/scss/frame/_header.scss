@@ -1,4 +1,38 @@
 > header{
-	height: toEm(110,$fontSize);
+	$headerHeight: 110;
+	position: relative;
+	height: toEm($headerHeight,$fontSize);
 	background-color: $frameBackgroundColor;
+	padding: 0 0 0 toEm(40,$fontSize);
+	img{
+		margin-top: toEm(10,$fontSize);
+	}
+	nav{
+		@include horizontal-list(0, right);
+		height: toEm($headerHeight,$fontSize);		
+		position: absolute;		
+		right: 0;
+		top: 0;
+		
+		ul{
+			margin: 0;
+			li{				
+				display: inline-block;
+				a{
+					$fontSize: 14;
+					font-size: 1.4em;
+					padding: 0 toEm(35,$fontSize);
+					color: $textColor;
+					text-decoration: none !important;
+					display: inline-block;
+					vertical-align: middle;
+					line-height: toEm($headerHeight+30+$fontSize,$fontSize);
+				}
+				a.selected,
+				a:hover{
+					background-color: $frameContentColor;
+				}
+			}
+		}
+	}
 }
