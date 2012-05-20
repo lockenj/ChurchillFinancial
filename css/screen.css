@@ -791,24 +791,28 @@ a {
 #frame #content #main_banner footer #slide_show_icons img {
   display: inline;
 }
-/* line 80, ../theme/scss/frame/_content.scss */
+/* line 77, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner footer #slide_show_icons img {
+  cursor: pointer;
+}
+/* line 83, ../theme/scss/frame/_content.scss */
 #frame #content > footer {
   clear: both;
   padding-top: 2.9em;
   text-align: left;
   background-color: #ebebeb;
 }
-/* line 85, ../theme/scss/frame/_content.scss */
+/* line 88, ../theme/scss/frame/_content.scss */
 #frame #content > footer h2 {
   margin-top: 0;
   color: #185a7f;
   font-size: 2.4em;
 }
-/* line 90, ../theme/scss/frame/_content.scss */
+/* line 93, ../theme/scss/frame/_content.scss */
 #frame #content > footer p {
   color: #575757;
 }
-/* line 92, ../theme/scss/frame/_content.scss */
+/* line 95, ../theme/scss/frame/_content.scss */
 #frame #content > footer p .prominent_text {
   color: #185a7f;
 }
