@@ -1,4 +1,5 @@
 > header{
+	$fontSize: 10;
 	$headerHeight: 110;
 	position: relative;
 	height: toEm($headerHeight,$fontSize);
@@ -28,7 +29,9 @@
 					vertical-align: middle;
 					line-height: toEm($headerHeight+30+$fontSize,$fontSize);
 				}
-				a.selected,
+				a.selected{
+					color: $prominentTextColor;
+				}
 				a:hover{
 					background-color: $frameContentColor;
 				}

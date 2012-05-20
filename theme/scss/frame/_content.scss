@@ -1,4 +1,97 @@
-#content{
-	height: 400px;
+#content{	
+	$fontSize: 10;
+	padding: toEm(35,$fontSize);
 	background-color: $frameContentColor;
+	#main_banner{
+		float: left;
+		section#additional_resources,
+		section#slideshow,
+		section#top_content{
+			float: left;
+			width: toEm($frameWidth - 180 - 70,$fontSize);
+			height: toEm(354,$fontSize);
+			position:relative; 
+			overflow:hidden;
+		}
+		@import "topContent";
+		section#slideshow{
+			.slidebox{
+				position:relative; 
+				width: 9999px;
+				img{
+					float:left;
+				}
+			}	
+		}
+		section#additional_resources{
+			display: inline-block;
+			vertical-align: top;
+			width: toEm(180,$fontSize);
+			height: toEm(354,$fontSize);
+			background-color: $frameBackgroundColor;
+			text-align: center;	
+			header{
+				width: 100%;
+				height: toEm(35,$fontSize);
+				background-color: $textColor;
+				padding: toEm(5,$fontSize) 0;
+				h3{
+					margin: 0;
+					color: $lightTextColor;	
+					line-height: toEm(35,$fontSize);		
+				}
+			}
+			nav{
+				ul{
+					width: 100%;
+					margin: 0;
+					padding: 0;
+					background-color: $frameContentColor;
+					overflow: auto;
+					li{
+						margin-bottom: toEm(3, $fontSize);
+						height: toEm(25,$fontSize);
+						background-color: $frameBackgroundColor;
+						a{				
+							line-height: toEm(25,$fontSize);
+							text-decoration: none;
+							color: $textColor;
+						}
+					}	
+					li:hover{
+						background-color: $frameContentColor;
+					}
+				}
+			}
+		}
+		footer{		
+			clear: both;			
+			width: toEm($frameWidth - 70,$fontSize);
+			background-color: $prominentTextColor;			
+			#slide_show_icons{
+				text-align: right;
+				margin-right:  toEm(10,$fontSize);
+				img{
+					display: inline;
+				}
+			}
+		}
+	}
+	> footer{
+		clear: both;
+		padding-top: toEm(29,$fontSize);
+		text-align: left;		
+		background-color: $frameContentColor;
+		h2{
+			margin-top: 0;
+			color: $prominentTextColor;
+			font-size: toEm(24,$fontSize);
+		}
+		p{
+			color: $textColor;
+			.prominent_text{
+				color: $prominentTextColor;
+			}
+		}
+	}
 }

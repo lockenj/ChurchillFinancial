@@ -1,4 +1,30 @@
 > footer{
-	height: toEm(170,$fontSize);
+	$fontSize: 10;
+	padding: toEm(35,$fontSize);
+	height: toEm(100,$fontSize);
 	background-color: $frameBackgroundColor;
+	#nmls_details{
+		color: $prominentTextColor;
+	}
+	#contact_and_details{
+		float: left;
+		color: $textColor;
+		margin-top: 0;
+		a{
+			color: $textColor;
+			text-decoration: none;
+		}		
+		a:hover{
+			border-bottom: toEm(1, $fontSize) solid $textColor;
+		}
+		a#email{
+			color: $prominentTextColor;		
+		}
+		a#email:hover{
+			border-bottom: toEm(1, $fontSize) solid $textColor;
+		}
+	}
+	#social_links{
+		float: right;
+	}
 }

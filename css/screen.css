@@ -562,6 +562,7 @@ a {
 #frame {
   width: 96em;
   margin: auto;
+  margin-bottom: 3.5em;
   behavior: url("/js/css3pie/PIE.htc");
   -webkit-box-shadow: 0 0 13px 4px #d9d9d9;
   -moz-box-shadow: 0 0 13px 4px #d9d9d9;
@@ -574,11 +575,11 @@ a {
   background-color: white;
   padding: 0 0 0 4em;
 }
-/* line 7, ../theme/scss/frame/_header.scss */
+/* line 8, ../theme/scss/frame/_header.scss */
 #frame > header img {
   margin-top: 1em;
 }
-/* line 10, ../theme/scss/frame/_header.scss */
+/* line 11, ../theme/scss/frame/_header.scss */
 #frame > header nav {
   margin: 0;
   padding: 0;
@@ -613,15 +614,15 @@ a {
 #frame > header nav li.last {
   padding-left: 0;
 }
-/* line 17, ../theme/scss/frame/_header.scss */
+/* line 18, ../theme/scss/frame/_header.scss */
 #frame > header nav ul {
   margin: 0;
 }
-/* line 19, ../theme/scss/frame/_header.scss */
+/* line 20, ../theme/scss/frame/_header.scss */
 #frame > header nav ul li {
   display: inline-block;
 }
-/* line 21, ../theme/scss/frame/_header.scss */
+/* line 22, ../theme/scss/frame/_header.scss */
 #frame > header nav ul li a {
   font-size: 1.4em;
   padding: 0 2.5em;
@@ -632,17 +633,182 @@ a {
   line-height: 11em;
 }
 /* line 32, ../theme/scss/frame/_header.scss */
-#frame > header nav ul li a.selected,
+#frame > header nav ul li a.selected {
+  color: #185a7f;
+}
+/* line 35, ../theme/scss/frame/_header.scss */
 #frame > header nav ul li a:hover {
   background-color: #ebebeb;
 }
 /* line 1, ../theme/scss/frame/_footer.scss */
 #frame > footer {
-  height: 12.143em;
+  padding: 3.5em;
+  height: 10em;
   background-color: white;
+}
+/* line 6, ../theme/scss/frame/_footer.scss */
+#frame > footer #nmls_details {
+  color: #185a7f;
+}
+/* line 9, ../theme/scss/frame/_footer.scss */
+#frame > footer #contact_and_details {
+  float: left;
+  color: #575757;
+  margin-top: 0;
+}
+/* line 13, ../theme/scss/frame/_footer.scss */
+#frame > footer #contact_and_details a {
+  color: #575757;
+  text-decoration: none;
+}
+/* line 17, ../theme/scss/frame/_footer.scss */
+#frame > footer #contact_and_details a:hover {
+  border-bottom: 0.1em solid #575757;
+}
+/* line 20, ../theme/scss/frame/_footer.scss */
+#frame > footer #contact_and_details a#email {
+  color: #185a7f;
+}
+/* line 23, ../theme/scss/frame/_footer.scss */
+#frame > footer #contact_and_details a#email:hover {
+  border-bottom: 0.1em solid #575757;
+}
+/* line 27, ../theme/scss/frame/_footer.scss */
+#frame > footer #social_links {
+  float: right;
 }
 /* line 1, ../theme/scss/frame/_content.scss */
 #frame #content {
-  height: 400px;
+  padding: 3.5em;
   background-color: #ebebeb;
+}
+/* line 5, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner {
+  float: left;
+}
+/* line 9, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner section#additional_resources,
+#frame #content #main_banner section#slideshow,
+#frame #content #main_banner section#top_content {
+  float: left;
+  width: 71em;
+  height: 35.4em;
+  position: relative;
+  overflow: hidden;
+}
+/* line 1, ../theme/scss/frame/_topContent.scss */
+#frame #content #main_banner section#top_content {
+  padding: 2em;
+  width: 67em;
+  height: 31.4em;
+}
+/* line 5, ../theme/scss/frame/_topContent.scss */
+#frame #content #main_banner section#top_content h1 {
+  margin-top: 0;
+  color: #185a7f;
+  font-size: 2.8em;
+}
+/* line 10, ../theme/scss/frame/_topContent.scss */
+#frame #content #main_banner section#top_content p {
+  /*text-ident: toEm(20,$fontSize);*/
+  color: #575757;
+}
+/* line 13, ../theme/scss/frame/_topContent.scss */
+#frame #content #main_banner section#top_content p .prominent_text {
+  color: #185a7f;
+}
+/* line 17, ../theme/scss/frame/_topContent.scss */
+#frame #content #main_banner section#top_content p:first-letter {
+  font-weight: bolder;
+}
+/* line 18, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner section#slideshow .slidebox {
+  position: relative;
+  width: 9999px;
+}
+/* line 21, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner section#slideshow .slidebox img {
+  float: left;
+}
+/* line 26, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner section#additional_resources {
+  display: inline-block;
+  vertical-align: top;
+  width: 18em;
+  height: 35.4em;
+  background-color: white;
+  text-align: center;
+}
+/* line 33, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner section#additional_resources header {
+  width: 100%;
+  height: 3.5em;
+  background-color: #575757;
+  padding: 0.5em 0;
+}
+/* line 38, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner section#additional_resources header h3 {
+  margin: 0;
+  color: white;
+  line-height: 3.5em;
+}
+/* line 45, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner section#additional_resources nav ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ebebeb;
+  overflow: auto;
+}
+/* line 51, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner section#additional_resources nav ul li {
+  margin-bottom: 0.3em;
+  height: 2.5em;
+  background-color: white;
+}
+/* line 55, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner section#additional_resources nav ul li a {
+  line-height: 2.5em;
+  text-decoration: none;
+  color: #575757;
+}
+/* line 61, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner section#additional_resources nav ul li:hover {
+  background-color: #ebebeb;
+}
+/* line 67, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner footer {
+  clear: both;
+  width: 89em;
+  background-color: #185a7f;
+}
+/* line 71, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner footer #slide_show_icons {
+  text-align: right;
+  margin-right: 1em;
+}
+/* line 74, ../theme/scss/frame/_content.scss */
+#frame #content #main_banner footer #slide_show_icons img {
+  display: inline;
+}
+/* line 80, ../theme/scss/frame/_content.scss */
+#frame #content > footer {
+  clear: both;
+  padding-top: 2.9em;
+  text-align: left;
+  background-color: #ebebeb;
+}
+/* line 85, ../theme/scss/frame/_content.scss */
+#frame #content > footer h2 {
+  margin-top: 0;
+  color: #185a7f;
+  font-size: 2.4em;
+}
+/* line 90, ../theme/scss/frame/_content.scss */
+#frame #content > footer p {
+  color: #575757;
+}
+/* line 92, ../theme/scss/frame/_content.scss */
+#frame #content > footer p .prominent_text {
+  color: #185a7f;
 }
